@@ -33,19 +33,20 @@
 
 //OBJETOS
 
-// var xicara = {
-//     cor: "azul",
-//     tamanho: "médio",
-//     numero : 1,
-// }
+var xicara = {
+    cor: "azul",
+    tamanho: "médio",
+    numero : 1,
+}
 
-// console.log(xicara.cor)
+console.log(xicara.cor)
 
 //ESTRUTURAS CONDICIONAIS
 
 // FUNÇÃO
 
 //PROMPT
+
 
 function calculadora(){
     const operacao = Number( prompt(`Escolha uma operação:\n 1 - Soma (+)\n 2 - Substração (-) \n 3 - Multiplicação (*) \n 4 - Divisão real (/) \n 5 - Divisão inteira (%) \n 6 - Potenciação (**)`));
@@ -126,3 +127,18 @@ calculadora();
 // }
 
 // w();
+
+
+//OPERADORES
+
+function operador(a, b){
+    const iguais = a === b;
+    const soma = a + b;
+
+    if (iguais){
+        return "São Iguais"
+    } 
+    return "Não são iguais"
+}
+
+console.log(operador(2, 4))

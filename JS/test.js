@@ -1,24 +1,24 @@
 // VARIAVEIS
-/*var y = 0;
-var x = 1;*/
+var y = 0;
+var x = 1;
 
-// var preco = 2;
-// var desonto = 0.2;
+var preco = 2;
+var desonto = 0.2;
 
-// const PRECO = 2;
-// var total = PRECO - desonto;
+const PRECO = 2;
+var total = PRECO - desonto;
 
-//FUNÇÃO
+FUNÇÃO
 
-// function soma(a, b){
-//     return a +b;
-// }
+function soma(a, b){
+    return a +b;
+}
 
-// soma(3, 5);
+soma(3, 5);
 
-// console.log(soma(3,5))
+console.log(soma(3,5))
 
-/*
+
 function returnEvenValues(array){
     let evenNums = [];
     for(let i = 0; i< array.length ; i++){
@@ -32,4 +32,7 @@ function returnEvenValues(array){
 }
 
 let array = [1, 2, 3, 4, 5, 7, 8];
-returnEvenValues(array);*/
+returnEvenValues(array);
+
+
+
