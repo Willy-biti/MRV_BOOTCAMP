@@ -399,23 +399,27 @@ function explosao3(amigoX,amigoY) {
 function energia() {
 	
     if (energiaAtual==3) {
-        
-        $("#energia").css("background-image", "url(imgs/energia3.png)");
+        // document.querySelector('.energia3').$("#energia")
+        // $("#energia").css("background-image", "url(imgs/energia3.png)");
+        $(".energia")
     }
 
     if (energiaAtual==2) {
-        
-        $("#energia").css("background-image", "url(imgs/energia2.png)");
+        // document.querySelector('.energia2').$("#energia")
+        // $("#energia").css("background-image", "url(imgs/energia2.png)");
+        $(".energia")
     }
 
     if (energiaAtual==1) {
-        
-        $("#energia").css("background-image", "url(imgs/energia1.png)");
+        // document.querySelector('.energia1').$("#energia")
+        // $("#energia").css("background-image", "url(imgs/energia1.png)");
+        $(".energia")
     }
 
     if (energiaAtual==0) {
-        
-        $("#energia").css("background-image", "url(imgs/energia0.png)");
+        // document.querySelector('.energia0').$("#energia")
+        // $("#energia").css("background-image", "url(imgs/energia0.png)");
+        $(".energia")
         
         //Game Over
         gameOver();
