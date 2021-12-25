@@ -7,7 +7,7 @@ function start() { // Inicio da fun��o start()
 	$("#fundoGame").append("<div id='inimigo2'></div>");
 	$("#fundoGame").append("<div id='amigo' class='anima3'></div>");
     $("#fundoGame").append("<div id='placar'></div>");
-    $("#fundoGame").append("<div id='energia'></div>");
+    // $("#fundoGame").append("<div id='energia'></div>");
     
 
     //Principais vari�veis do jogo
@@ -35,6 +35,10 @@ function start() { // Inicio da fun��o start()
     var somGameover=document.getElementById("somGameover");
     var somPerdido=document.getElementById("somPerdido");
     var somResgate=document.getElementById("somResgate");
+    var ener3 =document.querySelector('.energia3');
+    var ener2 =document.querySelector('.energia2');
+    var ener1 =document.querySelector('.energia1');
+    var ener0 =document.querySelector('.energia0');
 
     //M�sica em loop
     musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
@@ -191,6 +195,8 @@ function start() { // Inicio da fun��o start()
             var colisao4 = ($("#disparo").collision($("#inimigo2")));
             var colisao5 = ($("#jogador").collision($("#amigo")));
             var colisao6 = ($("#inimigo2").collision($("#amigo")));
+
+            
             // jogador com o inimigo1
                 
                 if (colisao1.length>0) {
@@ -396,30 +402,31 @@ function explosao3(amigoX,amigoY) {
 
     //Barra de energia
 
+
 function energia() {
+
+
 	
     if (energiaAtual==3) {
-        // document.querySelector('.energia3').$("#energia")
+        ener3
         // $("#energia").css("background-image", "url(imgs/energia3.png)");
-        $(".energia")
+
     }
 
     if (energiaAtual==2) {
-        // document.querySelector('.energia2').$("#energia")
+        ener2
         // $("#energia").css("background-image", "url(imgs/energia2.png)");
-        $(".energia")
+
     }
 
     if (energiaAtual==1) {
-        // document.querySelector('.energia1').$("#energia")
+        ener1
         // $("#energia").css("background-image", "url(imgs/energia1.png)");
-        $(".energia")
     }
 
     if (energiaAtual==0) {
-        // document.querySelector('.energia0').$("#energia")
+        ener0
         // $("#energia").css("background-image", "url(imgs/energia0.png)");
-        $(".energia")
         
         //Game Over
         gameOver();
